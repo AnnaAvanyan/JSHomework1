@@ -15,6 +15,9 @@ function CompareStrings(s1,s2){
       } 
       return true;
 }
+function ArrayIntersection(first, ...arrays) {
+    return first.filter(elem => Array.from(arguments).every(arr => arr.includes(elem)));
+}
 
 var s1 = "name";
 var s2 = "anme";
